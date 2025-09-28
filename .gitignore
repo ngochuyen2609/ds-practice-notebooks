@@ -1,0 +1,41 @@
+# --- Python build/cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.dylib
+
+# --- Virtual env ---
+.venv/
+venv/
+ENV/
+*.egg-info/
+
+# --- Scrapy ---
+.out/            # nếu lỡ tạo
+out/             # dữ liệu xuất (JSON/CSV…)
+.logs/
+logs/
+.scrapy/         # cache job + fingerprints
+
+# --- Editors/OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Playwright (nếu dùng scrapy-playwright) ---
+playwright/.cache/
+**/playwright/.cache/
+**/ms-playwright/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Env & secrets (giữ lại .env.example nếu có) ---
+.env
+.env.*.local
+
+# --- Others (tùy chọn) ---
+*.sqlite3
+*.db
